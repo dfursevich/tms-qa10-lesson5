@@ -3,6 +3,8 @@ public class Person {
     private int age = 0;
     private String phone;
 
+    private static String number = "110";
+
     public Person() {}
 
     public Person(String newName, int newAge) {
@@ -58,5 +60,13 @@ public class Person {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public static String getNumber() {
+        return number;
+    }
+
+    public static void setNumber(String num) {
+        number = num;
     }
 }
